@@ -46,7 +46,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 150px;
+    padding: 0 100px;
     background-color: var(--white-color);
 } 
 
@@ -81,11 +81,12 @@ header {
     color: var(--primary-color);
 }
 
+/* --------------------------------- */
 /*main home*/
 main {
     width: 100%;
     height: 100vh;
-    padding: 0 150px;
+    padding: 0 100px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -100,7 +101,7 @@ main {
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    right: 10.75em;
+    right: 6em;
     width: 20em;
     height: 30em;
     background-color: rgba(255, 255, 255, 0.2);  
@@ -154,9 +155,9 @@ main {
 }
 
 .home-txt h1 {
-    font-size: 35px;
+    font-size: 40px;
     font-family: 'masdagBold';
-    max-width: 500px;
+    max-width: 650px;
     letter-spacing: 2px;
     color: var(--green2-color);
 }
@@ -164,7 +165,7 @@ main {
 .home-txt p {
     font-size: 18px;
     font-family: 'Questrial';
-    max-width: 550px;
+    max-width: 700px;
     margin: 1px 2px;
     letter-spacing: 1px;
     color: var(--green2-color);
@@ -181,6 +182,7 @@ main {
     /* font*/
     font-family: 'theNotes';
     font-size: 20px;
+    font-weight: bold;
     color: var(--green2-color);
     text-decoration: none;
     align-items: center;
@@ -273,6 +275,7 @@ main {
     transform: skewX(45deg) translateX(-150px);
 }
 
+/* --------------------------------- */
 /* about*/
 .about {
     width: 100%;
@@ -301,25 +304,31 @@ main {
     width: 520px;
     height: 350px;
     margin: 20px; 
-    background: rgba(255, 255, 255, 0.2); 
-    border-radius: 25px;
     transition: 0.5s;
 }
 
+.box .card:hover {
+    background: rgba(255, 255, 255, 0.2); 
+    border-radius: 25px;
+}
 
 /* Card Modelo */
 .box .card img{
     position: absolute;
     bottom: 0;
-    height: 23em;
+    height: 28em;
     left: 50%;
     transform: translateX(-50%);
+    border-radius: 25px;
     transition: 0.5s;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1); 
 }
 
 .box .card:hover img {
     left: 85%;
-    height: 27em;
+    height: 350px;
+    border-radius: 0 25px 25px 0;
+    box-shadow: none;
 }
 
 /* BOX texto */
@@ -327,7 +336,7 @@ main {
     position: relative;
     opacity: 0;
     visibility: hidden;
-    width: 70%;
+    width: 65%;
     left: 20%;
     padding: 20px 20px 20px 50px;
     transition: 0.5s;
@@ -358,11 +367,12 @@ main {
     font-weight: 700;
 }
 
+/* --------------------------------- */
 /* cotización*/
 .price {
     width: 100%;
     height: 100vh;
-    padding: 0 150px;
+    padding: 0 100px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -370,11 +380,12 @@ main {
     background-color: var(--white-color);
 }
 
+/* --------------------------------- */
 /* portafolio*/
 .work {
     width: 100%;
     height: 100vh;
-    padding: 0 150px;
+    padding: 0 100px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -382,11 +393,12 @@ main {
     background-color: var(--blue-color);
 }
 
+/* --------------------------------- */
 /* 0800-HolaMarketing*/
 .contact {
     width: 100%;
     height: 100vh;
-    padding: 0 150px;
+    padding: 0 100px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -394,7 +406,7 @@ main {
     background-color: var(--white-color);
 }
 
-
+/* --------------------------------- */
 @media (max-width: 991px) {
 
 /*encabezado*/
@@ -541,6 +553,13 @@ main{
         height: 450px;
         margin: 40px 20px;
     }
+
+    .box .card:hover img {
+        left: 85%;
+        height: 350px;
+        border-radius: 25px 25px 0 0;
+        box-shadow: none;
+    }
 }
 
 @media (max-width: 390px) {
@@ -602,6 +621,71 @@ main{
 
     .box .card img {
         height: 18em;
+    }
+
+    .box .card:hover img{
+        left: 50%;
+        height: 15em;
+    }
+
+    .box .card .txt h3 {
+        font-size: 35px;
+    }
+
+    .box .card .txt p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width:360px) {
+    
+    
+    .home-txt h1{
+        font-size: 15px;
+        max-width: 600px;
+    }
+    
+    .home-txt p{
+        font-size: 10px;
+        max-width: 600px;
+    }
+
+    .home-txt a {
+        width: 100px;
+        height: 30px;
+        font-size: 10px;
+        font-weight: 700;
+        max-width: 600px;
+    }
+    
+    .home-box{
+        right: auto;
+        width: 15em;
+        height: 24em;
+        margin-top: 250px;
+    }
+    
+    .box-slider {
+        width: 13em;
+        height: 23em;
+    }
+    
+    .box-slider img {
+        width: 250px;
+    }
+
+    /* About */
+    .box .card {
+        width: 300px;
+        height: 280px;
+    }
+
+    .box .card:hover {
+        height: 400px;
+    }
+
+    .box .card img {
+        height: 12em;
     }
 
     .box .card:hover img{
