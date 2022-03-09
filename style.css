@@ -1,0 +1,522 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat+Subrayada:wght@400;700&family=Prompt:ital,wght@0,200;0,500;0,700;0,900;1,500&family=Questrial&family=Spartan:wght@400;500;700&display=swap');
+
+@font-face{
+    font-family: 'masdagBold';
+    src: url(./fonts/FontsFree-Net-Mesdag-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'theNotes';
+    src: url(./fonts/theNotes.ttf);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    scroll-padding-top: 2rem;
+    list-style: none;
+    text-decoration: none;
+}
+
+/* paleta de colores*/
+:root {
+    --black-color: #000000;
+    --white-color: #fff;
+    --blue-color: #a3d5ee;
+    --pink-color: #f0e0f1;
+    --green1-color: #d3d48d;
+    --green2-color: #06534b;
+    --cream-color: #fcf9da;
+    --grey1-color: #ebebeb;
+    --grey2-color: #363d46;
+    --orange-color: #FF8210;
+    --orange2-color: #e94822;
+}
+
+/*encabezado*/
+header {
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    top: 0;
+    right: 0;
+    z-index: 1000000000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 150px;
+    background-color: var(--white-color);
+} 
+
+/* Navbar*/
+.navbar {
+    position: relative;
+    display: flex;
+}
+
+.logo img {
+    width: 5em;
+}
+
+#menu-icon {
+    font-size: 2rem;
+    cursor: pointer;
+    display: none;
+}
+
+.navbar li, ul{
+    font-family: 'Questrial';
+}
+
+.navbar a {
+    font-size: 1rem;
+    padding: 20px;
+    font-weight: 500;
+    color: var(--text-color);
+}
+
+.navbar a:hover {
+    color: var(--primary-color);
+}
+
+/*main home*/
+main {
+    width: 100%;
+    height: 100vh;
+    padding: 0 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    background-color: var(--cream-color);
+    overflow: hidden;
+}
+
+.home-box {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    right: 10.75em;
+    width: 20em;
+    height: 23em;
+    background-color: rgba(255, 255, 255, 0.2);  
+    border-radius: 15px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1); 
+    z-index: 30;
+}
+
+.box-slider {
+    display: flex;
+    position: absolute;
+    overflow: hidden;
+    width: 18em;
+    height: 21em;
+    border-radius: 15px;
+}
+
+.slider-frame {
+    animation: slide 16s infinite alternate ease-in-out;
+}
+
+.box-slider ul {
+    display: flex;
+}
+
+.box-slider li {
+    width: 100%;
+}
+
+.box-slider img {
+    width: 300px;
+}
+
+@keyframes slide{
+    0% {margin-left: 0%;}
+    25% {margin-left: 0%;}
+
+    30% {margin-left: -105%;}
+    50% {margin-left: -105%;}
+
+    55% {margin-left: -210%;}
+    75% {margin-left: -210%;}
+
+    80% {margin-left: -315%;}
+    100% {margin-left: -315%;}
+}
+
+.home-txt{
+    z-index: 40;
+    position: absolute;
+}
+
+.home-txt h1 {
+    font-size: 40px;
+    font-family: 'masdagBold';
+    max-width: 650px;
+    letter-spacing: 2px;
+    color: var(--green2-color);
+}
+
+.home-txt p {
+    font-size: 20px;
+    font-family: 'Questrial';
+    max-width: 650px;
+    margin: 1px 2px;
+    letter-spacing: 1px;
+    color: var(--green2-color);
+}
+
+.home-txt a {
+    /*caja*/
+    display: flex;
+    width: 220px;
+    height: 30px;
+    margin-top: 10px;
+    transform: rotate(-5deg);
+    background-color: var(--pink-color);
+    /* font*/
+    font-family: 'theNotes';
+    font-size: 20px;
+    color: var(--green2-color);
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+/* elementos deco */
+.elements {
+    display: flex;
+} 
+
+.element1 {
+    width: 750px;
+    height: 750px;
+    margin-top: 138em;
+    margin-left: -350px;
+    transform: rotate(67.06deg);
+    z-index: 10;
+}
+
+.element2 {
+    width: 900px;
+    height: 900px;
+    margin-top: 140em;
+    margin-left: -520px;
+    transform: rotate(28.19deg);
+}
+
+.element3 {
+    position: relative;
+    width: 2500px;
+    height: 2500px;
+    margin-top: 120em;
+    margin-left: -1640px;
+    z-index: 20;
+}
+
+/* iconos redes sociales */
+.socialmedia{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--orange-color);
+    position: fixed;
+    z-index: 100000;
+    top: 50%;
+    right: 30px;
+    transform: translateY(-50%);
+}
+
+.socialmedia a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    margin: 15px 0; 
+    transform: scale(1.4); 
+    color: var(--text-color); 
+    border-radius: 1px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2); 
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1); 
+    backdrop-filter: blur(2px);
+    transition: 0.5s;
+    overflow: hidden;
+}
+
+.socialmedia a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 25px;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.4);
+    transform: skewX(45deg) translateX(150px);
+    transition: 0.5s;
+}
+
+.socialmedia a:hover {
+    color: var(--black-color);
+}
+.socialmedia a:hover::before {
+    transform: skewX(45deg) translateX(-150px);
+}
+
+/* about*/
+.about {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    background-color: var(--pink-color);
+} 
+
+/* BOX contenido  */
+.box {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Card Contenido */
+.box .card{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: flex-start;
+    width: 520px;
+    height: 350px;
+    margin: 20px; 
+    background: var(--blue-color); 
+    border-radius: 25px;
+    transition: 0.5s;
+}
+
+/* Card Modelo */
+.box .card img{
+    position: absolute;
+    bottom: 0;
+    height: 23em;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: 0.5s;
+}
+
+.box .card:hover img {
+    left: 85%;
+    height: 27em;
+}
+
+/* BOX texto */
+.box .card .txt {
+    position: relative;
+    opacity: 0;
+    visibility: hidden;
+    width: 70%;
+    left: 20%;
+    padding: 20px 20px 20px 50px;
+    transition: 0.5s;
+}
+
+.box .card:hover .txt {
+    left: 0;
+    opacity: 1;
+    visibility: visible;
+}
+
+.box .card .txt h3 {
+    font-family: 'masdagBold';
+    color: var(--orange-color);
+    font-size: 45px;
+}
+
+.box .card .txt p {
+    font-family: 'Questrial';
+    color: var(--orange2-color);
+    line-height: 1em;
+}
+
+.box .card .txt a {
+    position: relative;
+    font-family: 'theNotes';
+    color: var(--grey2-color);
+    font-weight: 700;
+}
+
+/* cotización*/
+.price {
+    width: 100%;
+    height: 100vh;
+    padding: 0 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    background-color: var(--white-color);
+}
+
+/* portafolio*/
+.work {
+    width: 100%;
+    height: 100vh;
+    padding: 0 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    background-color: var(--blue-color);
+}
+
+/* 0800-HolaMarketing*/
+.contact {
+    width: 100%;
+    height: 100vh;
+    padding: 0 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    background-color: var(--white-color);
+}
+
+@media (max-width: 881px) {
+
+/*encabezado*/
+header{
+    padding: 10px 45px;
+} 
+
+/* menu hamburguesa */
+#menu-icon {
+    font-size: 1.5rem;
+    cursor: pointer; 
+    display: initial;
+}
+
+.logo img {
+    width: 5em;
+}
+
+
+header .navbar {
+    position: absolute;
+    top: -600px;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    background: var(--blue-color);
+    box-shadow: 0 4px 4px rgb(0 0 0 /10%);
+    transition: ease;
+    text-align: center;
+}
+
+.navbar a {
+    padding: 45px;
+    display: block;
+}
+  
+.navbar.active {
+    top: 100%;
+}
+
+.navbar a:hover {
+    color: var(--grey1-color);
+    background: var(--text-color);
+} 
+
+/* responsive Home */
+main{
+    flex-direction: column;
+}
+
+.home-txt{
+    margin-top: 80px;
+}
+
+.home-txt h1{
+    font-size: 35px;
+    max-width: 600px;
+}
+
+.home-txt p{
+    font-size: 15px;
+    max-width: 600px;
+}
+
+.home-box{
+    right: auto;
+    width: 15em;
+    height: 18em;
+    margin-top: 300px;
+}
+
+.box-slider {
+    width: 13em;
+    height: 16em;
+}
+
+.box-slider img {
+    width: 250px;
+}
+
+@keyframes slide{
+    0% {margin-left: 0%;}
+    25% {margin-left: 0%;}
+
+    30% {margin-left: -125%;}
+    50% {margin-left: -125%;}
+
+    55% {margin-left: -245%;}
+    75% {margin-left: -245%;}
+
+    80% {margin-left: -365%;}
+    100% {margin-left: -365%;}
+}
+
+/* responsive Nosotras */
+.box .card{
+    width: auto;
+    align-items: flex-start;
+    max-width: 200;
+}
+
+.box .card:hover {
+    height: 550px;
+}
+
+.box .card:hover img{
+    left: 50%;
+    height: 20em;
+}
+
+.box .card .txt {
+    width: 100%;
+    left: 0;
+    padding: 40px;
+}
+
+}
+
+@media (max-width: 767px) {
+    .box {
+        flex-direction: column;
+    }
+
+    .box .card {
+        width: 400px;
+        height: 450px;
+        margin: 40px 20px;
+    }
+}
