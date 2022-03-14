@@ -89,10 +89,8 @@ main {
     padding: 0 100px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
     position: relative;
     background-color: var(--cream-color);
-    /* overflow: hidden; */
 }
 
 .home-box {
@@ -437,12 +435,13 @@ main{
     position: absolute;
     font-size: 25px;
     margin-top: 30px;
+    max-width: 650px;
     text-align: center;
 }
 
 .home-txt p{
     font-size: 12px;
-    max-width: 400px;
+    max-width: 650px;
     margin-top: 150px;
     text-align: center;
 }
@@ -453,7 +452,7 @@ main{
     margin-top: 230px;
     width: 100px;
     position: absolute;
-    left: 40%;
+    left: 45%;
 }
 
 .home-box{
@@ -498,13 +497,21 @@ main{
     max-width: 200;
 }
 
+.box .card img {
+    height: 25em;
+    margin: auto;
+}
+
 .box .card:hover {
-    height: 550px;
+    height: 535px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1); 
+    
 }
 
 .box .card:hover img{
     left: 50%;
-    height: 20em;
+    height: 18em;
+    border-radius: 25px 25px 0 0;
 }
 
 .box .card .txt {
@@ -527,70 +534,22 @@ main{
     }
 
     .box .card:hover img {
-        left: 85%;
+        left: 50%;
         height: 350px;
         border-radius: 25px 25px 0 0;
         box-shadow: none;
     }
-}
-
-@media (max-width: 390px) {
-    
-    
-    .home-txt h1{
-        position: absolute;
-        font-size: 25px;
-        margin-top: 25px;
-    }
-    
-    .home-txt p{
-        font-size: 14px;
-        margin-top: 220px;
-        max-width: 400px;
-    }
-
-    .home-txt a {
-        position: absolute;
-        width: 150px;
-        height: 30px;
-        left: 30%;
-        font-size: 15px;
-        font-weight: 700;
-        margin-top: 350px;
-    }
-    
-    .home-box{
-        right: auto;
-        width: 15em;
-        height: 20em;
-        margin-top: 350px;
-    }
-    
-    .box-slider {
-        width: 13em;
-        height: 18em;
-    }
-    
-    .box-slider img {
-        width: 250px;
-    }
 
     
-.socialmedia a {
-    width: 30px;
-    height: 30px;
-}
-
     /* About */
-
     .box .card {
         width: 300px;
         height: 280px;
-        margin: 20px 50px;
+        margin: 10px 40px;
     }
 
     .box .card:hover {
-        height: 500px;
+        height: 300px;
     }
 
     .box .card img {
@@ -599,15 +558,20 @@ main{
 
     .box .card:hover img{
         left: 50%;
-        height: 15em;
+        height: 7em;
     }
 
     .box .card .txt h3 {
-        font-size: 35px;
+        font-size: 20px;
     }
 
     .box .card .txt p {
-        font-size: 14px;
+        font-size: 12px;
+    }
+
+    .box .card .txt a {
+        font-size: 12px;
+        font-weight: 800;
     }
 }
 
@@ -682,3 +646,80 @@ main{
         font-size: 12px;
     }
 }
+
+@media (max-width: 390px) {
+    
+    
+    .home-txt h1{
+        position: absolute;
+        font-size: 25px;
+        margin-top: 25px;
+    }
+    
+    .home-txt p{
+        font-size: 14px;
+        margin-top: 220px;
+        max-width: 400px;
+    }
+
+    .home-txt a {
+        position: absolute;
+        width: 150px;
+        height: 30px;
+        left: 30%;
+        font-size: 15px;
+        font-weight: 700;
+        margin-top: 350px;
+    }
+    
+    .home-box{
+        right: auto;
+        width: 15em;
+        height: 20em;
+        margin-top: 350px;
+    }
+    
+    .box-slider {
+        width: 13em;
+        height: 18em;
+    }
+    
+    .box-slider img {
+        width: 250px;
+    }
+    
+    .socialmedia a {
+    width: 30px;
+    height: 30px;
+}
+
+    /* About */
+
+    .box .card {
+        width: 300px;
+        height: 280px;
+        margin: 20px 50px;
+    }
+
+    .box .card:hover {
+        height: 300px;
+    }
+
+    .box .card img {
+        height: 18em;
+    }
+
+    .box .card:hover img{
+        left: 50%;
+        height: 15em;
+    }
+
+    .box .card .txt h3 {
+        font-size: 35px;
+    }
+
+    .box .card .txt p {
+        font-size: 14px;
+    }
+}
+
