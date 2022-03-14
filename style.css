@@ -373,7 +373,25 @@ main {
 }
 
 /* --------------------------------- */
-@media (max-width: 991px) {
+@media all and (max-width: 1240px) {
+    .home-txt h1 {
+        font-size: 40px;
+        font-family: 'masdagBold';
+        max-width: 450px;
+        letter-spacing: 2px;
+        color: var(--green2-color);
+    }
+    
+    .home-txt p {
+        font-size: 18px;
+        font-family: 'Questrial';
+        max-width: 450px;
+        margin: 1px 2px;
+        letter-spacing: 1px;
+        color: var(--green2-color);
+    }
+}
+@media all and (max-width: 991px) {
 
 /*encabezado*/
 header{
@@ -452,7 +470,7 @@ main{
     margin-top: 230px;
     width: 100px;
     position: absolute;
-    left: 45%;
+    left: 40%;
 }
 
 .home-box{
@@ -522,7 +540,7 @@ main{
 
 }
 
-@media (max-width: 767px) {
+@media all and (max-width: 767px) {
     .box {
         flex-direction: column;
     }
@@ -540,9 +558,33 @@ main{
         box-shadow: none;
     }
 
+    .home-txt h1{
+        position: absolute;
+        font-size: 25px;
+        margin-top: 30px;
+        max-width: 500px;
+        text-align: center;
+    }
+    
+    .home-txt p{
+        font-size: 12px;
+        max-width: 500px;
+        margin-top: 150px;
+        text-align: center;
+    }
+    
+    .home-txt a {
+        font-weight: 900;
+        font-size: 15px;
+        margin-top: 230px;
+        width: 100px;
+        position: absolute;
+        left: 40%;
+    }
+
     
     /* About */
-    .box .card {
+.box .card {
         width: 300px;
         height: 280px;
         margin: 10px 40px;
@@ -647,26 +689,26 @@ main{
     }
 }
 
-@media (max-width: 390px) {
+@media (max-width: 391px) {
     
     
     .home-txt h1{
-        position: absolute;
-        font-size: 25px;
-        margin-top: 25px;
+        font-size: 20px;
+        margin-top: 45px;
+        max-width: 250px;
     }
     
     .home-txt p{
-        font-size: 14px;
-        margin-top: 220px;
-        max-width: 400px;
+        font-size: 12px;
+        margin-top: 240px;
+        max-width: 250px;
     }
 
     .home-txt a {
-        position: absolute;
+        position: absolute; 
         width: 150px;
         height: 30px;
-        left: 30%;
+        left: 20%;
         font-size: 15px;
         font-weight: 700;
         margin-top: 350px;
@@ -676,7 +718,7 @@ main{
         right: auto;
         width: 15em;
         height: 20em;
-        margin-top: 350px;
+        margin-top: 310px;
     }
     
     .box-slider {
