@@ -101,7 +101,7 @@ main {
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    right: 6em;
+    right: 8em;
     width: 20em;
     height: 30em;
     background-color: rgba(255, 255, 255, 0.2);  
@@ -562,13 +562,13 @@ main{
     .home-box{
         right: auto;
         width: 15em;
-        height: 25em;
+        height: 20em;
         margin-top: 350px;
     }
     
     .box-slider {
         width: 13em;
-        height: 23em;
+        height: 18em;
     }
     
     .box-slider img {
@@ -611,35 +611,38 @@ main{
     }
 }
 
-@media (max-width:360px) {
-    
-    
+@media (max-width:420px) {
+
+    .home-txt {
+        margin-top: -45px;
+    }
     .home-txt h1{
-        font-size: 20px;
+        font-size: 18px;
         max-width: 250px;
-        margin-top: 5px;
+        margin-top: 25px;
     }
     
     .home-txt p{
         font-size: 14px;
         max-width: 250px;
-        margin-top: 220px;
+        margin-top: 210px;
     }
 
     .home-txt a {
         width: 100px;
         height: 30px;
         font-size: 15px;
-        margin-top: 350px;
+        margin-top: 330px;
         font-weight: 700;
         max-width: 600px;
     }
     
     .home-box{
         right: auto;
+        height: auto;
         width: 15em;
         height: 24em;
-        margin-top: 350px;
+        margin-top: 300px;
     }
     
     .box-slider {
