@@ -655,26 +655,27 @@ main{
     .box .card {
         width: 300px;
         height: 280px;
+        margin: 20px 40px;
     }
 
     .box .card:hover {
-        height: 400px;
+        height: 350px;
     }
 
     .box .card img {
-        height: 12em;
+        height: 18em;
     }
 
     .box .card:hover img{
         left: 50%;
-        height: 15em;
+        height: 8em;
     }
 
     .box .card .txt h3 {
-        font-size: 35px;
+        font-size: 25px;
     }
 
     .box .card .txt p {
-        font-size: 14px;
+        font-size: 12px;
     }
 }
