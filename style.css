@@ -92,7 +92,7 @@ main {
     justify-content: space-between;
     position: relative;
     background-color: var(--cream-color);
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .home-box {
@@ -180,7 +180,7 @@ main {
     transform: rotate(-5deg);
     background-color: var(--pink-color);
     /* font*/
-    font-family: 'theNotes';
+    font-family: 'Questrial';
     font-size: 20px;
     font-weight: bold;
     color: var(--green2-color);
@@ -190,38 +190,6 @@ main {
     
 }
 
-/* elementos deco */
-.elements {
-    display: flex;
-    visibility: visible;
-    opacity: 1;
-} 
-
-.element1 {
-    width: 750px;
-    height: 750px;
-    margin-top: 138em;
-    margin-left: -350px;
-    transform: rotate(67.06deg);
-    z-index: 10;
-}
-
-.element2 {
-    width: 900px;
-    height: 900px;
-    margin-top: 140em;
-    margin-left: -520px;
-    transform: rotate(28.19deg);
-}
-
-.element3 {
-    position: relative;
-    width: 2500px;
-    height: 2500px;
-    margin-top: 120em;
-    margin-left: -1640px;
-    z-index: 20;
-}
 
 /* iconos redes sociales */
 .socialmedia{
@@ -422,7 +390,7 @@ header{
 }
 
 .logo img {
-    width: 5em;
+    width: 4em;
 }
 
 
@@ -456,32 +424,36 @@ header .navbar {
 /* responsive Home */
 main{
     flex-direction: column;
-    align-items: center;
 }
-
-.elements {
-    visibility: hidden;
-    opacity: 0;
-} 
+ 
 
 .home-txt{
-    margin-top: 80px;
+    display: flex;
+    position: absolute;
+    align-items: center;   
 }
 
 .home-txt h1{
+    position: absolute;
     font-size: 25px;
-    max-width: 500px;
+    margin-top: 30px;
+    text-align: center;
 }
 
 .home-txt p{
     font-size: 12px;
-    max-width: 600px;
+    max-width: 400px;
+    margin-top: 150px;
+    text-align: center;
 }
 
 .home-txt a {
     font-weight: 900;
     font-size: 15px;
+    margin-top: 230px;
     width: 100px;
+    position: absolute;
+    left: 40%;
 }
 
 .home-box{
@@ -563,33 +535,35 @@ main{
 }
 
 @media (max-width: 390px) {
-    .home-txt{
-        margin-top: 80px;
-    }
+    
     
     .home-txt h1{
+        position: absolute;
         font-size: 25px;
-        max-width: 600px;
+        margin-top: 25px;
     }
     
     .home-txt p{
         font-size: 14px;
-        max-width: 600px;
+        margin-top: 220px;
+        max-width: 400px;
     }
 
     .home-txt a {
+        position: absolute;
         width: 150px;
         height: 30px;
+        left: 30%;
         font-size: 15px;
         font-weight: 700;
-        max-width: 600px;
+        margin-top: 350px;
     }
     
     .home-box{
         right: auto;
         width: 15em;
         height: 25em;
-        margin-top: 400px;
+        margin-top: 350px;
     }
     
     .box-slider {
@@ -641,19 +615,22 @@ main{
     
     
     .home-txt h1{
-        font-size: 15px;
-        max-width: 600px;
+        font-size: 20px;
+        max-width: 300px;
+        margin-top: 10px;
     }
     
     .home-txt p{
-        font-size: 10px;
-        max-width: 600px;
+        font-size: 14px;
+        max-width: 300px;
+        margin-top: 190px;
     }
 
     .home-txt a {
         width: 100px;
         height: 30px;
-        font-size: 10px;
+        font-size: 15px;
+        margin-top: 310px;
         font-weight: 700;
         max-width: 600px;
     }
@@ -662,7 +639,7 @@ main{
         right: auto;
         width: 15em;
         height: 24em;
-        margin-top: 250px;
+        margin-top: 310px;
     }
     
     .box-slider {
