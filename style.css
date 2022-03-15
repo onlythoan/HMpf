@@ -89,8 +89,52 @@ main {
     padding: 0 100px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     position: relative;
     background-color: var(--cream-color);
+    overflow: hidden;
+}
+
+
+.home-txt{
+    z-index: 40;
+    position: absolute;
+}
+
+.home-txt h1 {
+    font-size: 40px;
+    font-family: 'masdagBold';
+    max-width: 650px;
+    letter-spacing: 2px;
+    color: var(--green2-color);
+}
+
+.home-txt p {
+    font-size: 18px;
+    font-family: 'Questrial';
+    max-width: 700px;
+    margin: 1px 2px;
+    letter-spacing: 1px;
+    color: var(--green2-color);
+}
+
+.home-txt a {
+    /*caja*/
+    display: flex;
+    width: 220px;
+    height: 30px;
+    margin-top: 10px;
+    transform: rotate(-5deg);
+    background-color: var(--pink-color);
+    /* font*/
+    font-family: 'Questrial';
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--green2-color);
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    
 }
 
 .home-box {
@@ -99,7 +143,7 @@ main {
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    right: 8em;
+    left: 56em;
     width: 20em;
     height: 30em;
     background-color: rgba(255, 255, 255, 0.2);  
@@ -146,48 +190,6 @@ main {
     80% {margin-left: -315%;}
     100% {margin-left: -315%;}
 }
-
-.home-txt{
-    z-index: 40;
-    position: absolute;
-}
-
-.home-txt h1 {
-    font-size: 40px;
-    font-family: 'masdagBold';
-    max-width: 650px;
-    letter-spacing: 2px;
-    color: var(--green2-color);
-}
-
-.home-txt p {
-    font-size: 18px;
-    font-family: 'Questrial';
-    max-width: 700px;
-    margin: 1px 2px;
-    letter-spacing: 1px;
-    color: var(--green2-color);
-}
-
-.home-txt a {
-    /*caja*/
-    display: flex;
-    width: 220px;
-    height: 30px;
-    margin-top: 10px;
-    transform: rotate(-5deg);
-    background-color: var(--pink-color);
-    /* font*/
-    font-family: 'Questrial';
-    font-size: 20px;
-    font-weight: bold;
-    color: var(--green2-color);
-    text-decoration: none;
-    align-items: center;
-    justify-content: center;
-    
-}
-
 
 /* iconos redes sociales */
 .socialmedia{
@@ -474,10 +476,12 @@ main{
 }
 
 .home-box{
-    right: auto;
+    display: flex;
+    position: absolute;
+    left: 35%;
     width: 15em;
     height: 25em;
-    margin-top: 225px;
+    margin-top: 250px;
 }
 
 .box-slider {
