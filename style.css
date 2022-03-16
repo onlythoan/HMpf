@@ -102,7 +102,6 @@ header .logo {
 
 
 /*home*/
-
 .home{
     width: 100%;
     min-height: 100vh;
@@ -394,8 +393,8 @@ header .logo {
 
 /* responsive about */
 .box .card .box-txt p {
-        max-width: 180px;
-    }   
+    max-width: 180px;
+}   
 }
 
 @media (max-width: 991px){
@@ -575,14 +574,13 @@ header .navbar {
 /* about */
 .box:hover img {
     margin-top: 15px;
-    height: 300px;
+    height: 250px;
 }
 
 .box .card .box-txt p {
     line-height: 12px;
     max-width: 300px;
 }
-
 } 
 
 @media (max-width: 420px) {
