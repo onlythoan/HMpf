@@ -400,6 +400,18 @@ header .logo {
 
 @media (max-width: 991px){
 
+/* home text */
+.home-text h2{
+    margin-top: 80px; 
+    font-size: 35px;
+    max-width: 300px;
+}
+ 
+.home-text p{
+    margin-bottom: 15px;
+    max-width: 300px;
+}
+
 /* responsive about */
 .about{
         flex-direction: column;
@@ -415,21 +427,27 @@ header .logo {
        height: 600px;
 }
 
-    .box:hover img {
+.box:hover img {
        top: 70%;
        left: 50%;
-       height: 250px;
+       height: 300px;
        border-radius: 25px 25px 25px 25px;
        margin-bottom: 2px;
 }
+
 .box .box-txt{
-        width: 100%;
-        left: 0;
-        padding: 30px;
+    width: 100%;
+    left: 0;
+    padding: 30px;
+}
+
+.box .card .box-txt p {
+    line-height: 12px;
+    max-width: 300px;
 }
 
 .box img {
-        height: 350px;
+    height: 350px;
 }
 }
 
@@ -437,18 +455,18 @@ header .logo {
 
 /*encabezado*/
 header{
-    padding: 10px 45px;
+    padding: 8px 45px;
 } 
 
 /*Logo*/
 .logo h1{
-    font-size: 35px;
+    font-size: 31px;
     max-width: 900px;
 }
 
 .logo span {
-    font-size: 15px;
-    margin-top: -20px;   
+    font-size: 13px;
+    margin-top: -19px;   
 }
 
 header .logo{
@@ -461,8 +479,8 @@ header .logo{
 } 
 
 .home-text h2{
-    margin-top: 100px; 
-    font-size: 40px;
+    margin-top: 80px; 
+    font-size: 35px;
     max-width: 500px;
 }
  
@@ -514,10 +532,14 @@ header .logo{
     align-items: center;
 }
 
+.socialmedia a{
+    width: 35px;
+    height: 35px; 
+}
 
 /* menu hamburguesa */
 #menu-icon {
-    font-size: 2rem;
+    font-size: 1.5rem;
     cursor: pointer; 
     display: initial;
 }
@@ -530,14 +552,14 @@ header .navbar {
     right: 0;
     display: flex;
     flex-direction: column;
-    background: #fff;
+    background: var(--white-color);
     box-shadow: 0 4px 4px rgb(0 0 0 /10%);
     transition: ease;
     text-align: center;
 }
 
 .navbar a {
-    padding: 45px;
+    padding: 25px;
     display: block;
 }
   
@@ -546,15 +568,26 @@ header .navbar {
 }
 
 .navbar a:hover {
-    color: #fff;
-    background: var(--text-color);
+    color: var(--green2-color);
+    background: var(--white-color);
 } 
+
+/* about */
+.box:hover img {
+    margin-top: 15px;
+    height: 300px;
+}
+
+.box .card .box-txt p {
+    line-height: 12px;
+    max-width: 300px;
+}
+
 } 
 
 @media (max-width: 420px) {
 
 /* home */
-
 .home-text h2{
     margin-top: 80px;
     font-size: 25px;
@@ -578,6 +611,7 @@ header .navbar {
     width: 30px;
     height: 30px;
 }
+
 /* icono hamburguesa */
 #menu-icon {
     font-size: 1.2rem;      
