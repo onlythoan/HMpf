@@ -550,7 +550,13 @@ header .logo {
 /* responsive about */
 .box .card .box-txt p {
     max-width: 180px;
-}   
+} 
+
+/* contact */
+.form {
+    min-width: 800px;
+}
+
 }
 
 @media (max-width: 991px){
@@ -699,7 +705,6 @@ header .logo{
     display: initial;
 }
 
-
 header .navbar {
     position: absolute;
     top: -600px;
@@ -737,7 +742,32 @@ header .navbar {
     line-height: 12px;
     max-width: 300px;
 }
+
+.form {
+    min-width: 750px;
+}
 } 
+
+@media (max-width:767px) {
+/* contact */
+.form {
+    min-width: 450px;
+}
+
+.form h2 {
+    font-size: 30px;
+}
+
+.resp-txt {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: -35px;
+    font-size: 70px;
+}
+}
 
 @media (max-width: 420px) {
 
@@ -811,6 +841,25 @@ header .navbar {
 .box:hover img {
     margin-top: 15px;
     box-shadow: none;
+}
+
+/* contact */
+.form {
+    min-width: 200px;
+}
+
+.form h2 {
+    font-size: 20px;
+}
+
+.resp-txt {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: -25px;
+    font-size: 50px;
 }
 }
 
