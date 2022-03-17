@@ -875,6 +875,27 @@ header .navbar {
     margin-bottom: 15px;
     max-width: 500px;
 }
+
+/* contact */
+.form {
+    min-width: 150px;
+}
+
+.form .row100 .col {
+    width: 80%;
+}
+
+.form .row100 .col .input-box {
+    height: 40px;
+}
+
+.form .row100 .col .input-box .text {
+    font-size: 12px;
+}
+
+.form .row100 .col .input-box input, .form .row100 .col .input-box textarea {
+    font-size: 12px;
+}
 }
 
 @media (max-width: 320px) {
@@ -934,6 +955,27 @@ header .navbar {
 .box .card .box-txt p {
     font-size: 12px;
     font-weight: 700;
+}
+
+/* contact */
+
+.form .row100 .col {
+    width: 75%;
+}
+
+.form h2 {
+    font-size: 16px;
+}
+
+.resp-txt {
+    margin-top: 0;
+    margin-bottom: -15px;
+    font-size: 35px;
+}
+
+.form .row100 .col input[type="submit"] {
+    padding: 10px 20px;
+    font-size: 14px;
 }
 
 }
